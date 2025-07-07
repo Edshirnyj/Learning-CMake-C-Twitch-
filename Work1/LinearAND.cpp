@@ -20,20 +20,14 @@ void LinearAND::linearw() {
     cin.getline(BigStringA, 8);
 
     cout << "You Input: ";
-    for (int i = 0; i < 8; i++)
-    {
-        cout << BigStringA[i];
-    }
+    for (int i = 0; i < 8; i++) cout << "\033[31m" << BigStringA[i] << "\033[0m";
     cout << " Right?" << endl;
 
     cout << "Enter string B: ";
     cin.getline(BigStringB, 8);
 
     cout << "You Input: ";
-    for (int i = 0; i < 8; i++)
-    {
-        cout << BigStringB[i];
-    }
+    for (int i = 0; i < 8; i++) cout << "\033[31m" << BigStringB[i] << "\033[0m";
     cout << " Right?" << endl;
 
     for (int i = 0; i < 8; i++)
@@ -42,10 +36,7 @@ void LinearAND::linearw() {
     }
 
     cout << "Result: ";
-    for (int i = 0; i < 8; i++)
-    {
-        cout << BigStringC[i];
-    }
+    for (int i = 0; i < 8; i++) cout << BigStringC[i];
     cout << endl;
     system("pause");
 }
